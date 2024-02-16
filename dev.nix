@@ -16,8 +16,7 @@
     enable = true;
     previews = [
       {
-        command = ["npx" "@11ty/eleventy" "--serve"];
-        env = { PORT = "$PORT";};
+        command = ["npx" "@11ty/eleventy" "--serve" "--port=$PORT"];
         manager = "web";
         id = "web";
       }
